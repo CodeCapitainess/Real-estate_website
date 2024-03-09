@@ -105,3 +105,28 @@ a{
     text-decoration: none;
 }
 img{ height: auto; }
+input,
+button,
+select{
+    background: none;
+    border: none;
+    font: inherit;
+}
+button{ cursor: pointer; }
+input,
+select{
+    width: 100%;
+    outline: none;
+}
+address{ font-style: normal; }
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+html{
+    font-family: var(--font-primary);
+    font-size: var(--neutral-5);
+    font-size: var(--fs-body-medium);
+    line-height: var(--lh-body-medium);
+}
