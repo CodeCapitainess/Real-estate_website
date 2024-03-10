@@ -276,6 +276,32 @@ body{
     box-shadow: var(--shadow-3);
 }
 
+.card{
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+.card:where(:hover, :focus-within){ box-shadow: var(--shadow-4); }
+.card-banner{ position: relative; }
+.card-banner .img-cover{ transition: var(--transition-duration-smooth) var(--transition-easing-quick); }
+.card:where(:hover, :focus-within) .img-cover{
+    scale: 1.05;
+    rotate: 2deg;
+}
+.card:where(.badge, .icon-btn){
+    position: absolute;
+    top: 20px;
+}
+.card .badge{ left: 20px; }
+.card .icon-btn{
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    scale: 0.8;
+    transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
 /* Header */
 .header{
     position: fixed;
