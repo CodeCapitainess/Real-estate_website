@@ -191,3 +191,22 @@ body{
     font-weight: var(--weight-semiBold);
     letter-spacing: var(--traking-p-05);
 }
+
+/* Reused Style */
+.material-symbols-rounded{
+    display: block;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+.container{
+    padding-inline: 16px;
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+}
