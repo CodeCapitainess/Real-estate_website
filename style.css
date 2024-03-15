@@ -549,3 +549,25 @@ body{
     font-size: 4rem;
     font-variation-settings: 'FILL' 1;
 }
+
+/* Story */
+.story .section-subtitle{ color: var(--primary-100); }
+.story .section-title{ margin-block: 12px; }
+.avatar-list{ display: flex; }
+.avatar{
+    position: relative;
+    width: 60px;
+    height: 46px;
+    border-radius: var(--radius-full);
+    border: 3px solid var(--neutral-98);
+    overflow: hidden;
+}
+.avatar:not(:first-child){ margin-inline-start: -10px; }
+.avatar .overlay-content{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: #000000BF;
+    color: var(--neutral-100);
+}
