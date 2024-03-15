@@ -571,3 +571,21 @@ body{
     background-color: #000000BF;
     color: var(--neutral-100);
 }
+.story .title-wrapper{
+    display: grid;
+    gap: 16px;
+}
+.story-list{
+    display: grid;
+    gap: 16px;
+}
+.story-card{
+    position: relative;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
