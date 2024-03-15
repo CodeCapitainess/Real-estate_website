@@ -649,3 +649,29 @@ body{
     display: grid;
     justify-content: center;
 }
+
+/* Media Queries */
+
+/** responsive for larger than 768px screen **/
+@media(min-width: 768px){
+    :root{
+        --fs-headline-large: 5.2rem;
+        --fs-headline-medium: 4rem;
+        --fs-headline-small: 3.6rem;
+        
+        --lh-headline-large: 64px;
+        --lh-headline-medium: 52px;
+        --lh-headline-small: 48px;
+    }
+
+    .container{ max-width: 720px; }
+    .section{ padding-block-end: 80px; }
+    .title-wrapper,
+    .story .title-wrapper{
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+        gap: 40px;
+        margin-block-end: 48px;
+    }
+}
