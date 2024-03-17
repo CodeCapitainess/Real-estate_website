@@ -729,3 +729,24 @@ body{
     .footer-brand{ grid-column: 1 / 4; }
     .footer-text{ max-width: 400px; }
 }
+
+@media(min-width: 992px){
+    :root{
+        --fs-body-large: 1.8rem;
+
+        --lh-body-small: 32px;
+    }
+
+    .container{ max-width: 950px; }
+
+    .nav-toggle-btn{ display: none; }
+    .navbar,
+    .navbar-list,
+    .navbar-wrapper{
+        all: unset;
+        display: flex;
+        align-items: center;
+    }
+    .navbar,
+    .navbar-list{ flex-grow: 1; }
+}
