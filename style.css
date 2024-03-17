@@ -674,4 +674,15 @@ body{
         gap: 40px;
         margin-block-end: 48px;
     }
+
+    .hero{ padding-block: 160px 100px; }
+    .search-bar{
+        grid-template-columns: 160px 160px 1fr max-content;
+        gap: 0;
+    }
+    .search-item .material-symbols-rounded{ display: none; }
+    .search-item:not(:last-of-type)::after{
+        content: "";
+        
+    }
 }
