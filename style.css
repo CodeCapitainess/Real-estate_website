@@ -801,4 +801,24 @@ body{
         display: block;
         right: 24px;
     }
+    .hero-banner{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        max-width: 720px;
+        z-index: -1;
+    }
+
+    .property .section-text{ max-width: 640px; }
+
+    .feature .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .feature-content{ padding: 40px; }
+    .feature-list{ grid-template-columns: 1fr; }
+    .feature-banner{ aspect-ratio: auto; }
+    .feature-2 .feature-banner{ order: 1; }
 }
