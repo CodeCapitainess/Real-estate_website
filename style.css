@@ -749,4 +749,25 @@ body{
     }
     .navbar,
     .navbar-list{ flex-grow: 1; }
+    .navbar-list{ justify-content: center; }
+    .navbar-link,
+    .btn-link{
+        color: var(--neutral-80);
+        line-height: 48px;
+    }
+    .navbar-link{ padding: 0 24px; }
+    :is(.navbar-link, .btn-link):is(:hover, :focus-visible),
+    .navbar-link.active{ color: var(--neutral-100); }
+    .navbar-link.active{ position: relative; }
+    .navbar-link.active::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        translate: -50% 0;
+        bottom: 8px;
+        width: 4px;
+        height: 4px;
+        border-radius: var(--radius-circle);
+        background-color: var(--neutral-100);
+    }
 }
