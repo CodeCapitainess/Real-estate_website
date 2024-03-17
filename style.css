@@ -707,4 +707,25 @@ body{
         grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
+
+    .video-card{ height: 400px; }
+    .play-btn{
+        width: 96px;
+        height: 96px;
+    }
+    .play-btn .material-symbols-rounded{ font-size: 4.8rem; }
+
+    .story .section-title{ margin-block: 16px; }
+    .avatar{
+        width: 80px;
+        height: 60px;
+    }
+    .story-list{ grid-template-columns: 1fr 1fr; }
+
+    .footer-top .container{
+        padding-block: 80px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-brand{ grid-column: 1 / 4; }
+    .footer-text{ max-width: 400px; }
 }
