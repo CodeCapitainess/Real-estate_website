@@ -683,6 +683,28 @@ body{
     .search-item .material-symbols-rounded{ display: none; }
     .search-item:not(:last-of-type)::after{
         content: "";
-        
+        position: absolute;
+        top: 16px;
+        left: 100%;
+        bottom: 16px;
+        width: 1px;
+        background-color: var(--neutral-90);
+    }
+    .search-btn{
+        height: 100%;
+        margin-inline-start: 8px;
+    }
+
+    .property{ padding-block-start: 80px; }
+    .property .section-text{ margin-block-end: 0; }
+
+    .feature-content{ padding-block-start: 32px; }
+    .feature-content .feature-text{
+        margin-block: 16px 24px;
+        line-height: 28px;
+    }
+    .feature-list{
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
     }
 }
